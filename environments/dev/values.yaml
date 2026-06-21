@@ -12,4 +12,4 @@ payment-service:
 search-service:
   tag: develop-97e01d45
 booking-service:
-  tag: latest
+  tag: develop-97e01d45
