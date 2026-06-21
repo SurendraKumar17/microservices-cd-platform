@@ -8,7 +8,7 @@ auth-service:
 notification-service:
   tag: develop-97e01d45
 payment-service:
-  tag: latest
+  tag: develop-97e01d45
 search-service:
   tag: latest
 booking-service:
