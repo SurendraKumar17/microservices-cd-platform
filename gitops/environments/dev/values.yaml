@@ -36,3 +36,5 @@ booking-service:
   tag: develop-b842f7a8
 search-service:
   tag: develop-b842f7a8
+notification-service:
+  tag: develop-b842f7a8
