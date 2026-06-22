@@ -31,7 +31,7 @@ pdb:
 auth-service:
   tag: develop-c1462d57
 payment-service:
-  tag: develop-5f8c15c3
+  tag: develop-c1462d57
 booking-service:
   tag: develop-c1462d57
 search-service:
