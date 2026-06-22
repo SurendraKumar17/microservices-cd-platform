@@ -33,7 +33,7 @@ auth-service:
 payment-service:
   tag: develop-b842f7a8
 booking-service:
-  tag: develop-b842f7a8
+  tag: develop-b83e2a9b
 search-service:
   tag: develop-b842f7a8
 notification-service:
