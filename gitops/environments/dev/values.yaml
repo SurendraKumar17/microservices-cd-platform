@@ -40,3 +40,5 @@ payment-service:
   tag: develop-71b8fa90
 search-service:
   tag: develop-71b8fa90
+booking-service:
+  tag: develop-71b8fa90
