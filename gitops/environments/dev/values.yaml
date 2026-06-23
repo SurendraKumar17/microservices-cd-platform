@@ -44,3 +44,5 @@ booking-service:
   tag: develop-71b8fa90
 auth-service:
   tag: develop-71b8fa90
+notification-service:
+  tag: develop-71b8fa90
