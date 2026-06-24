@@ -23,7 +23,7 @@ spec:
       serviceAccountName: {{ .Release.Name }}-notification
       containers:
       - name: notification
-        image: {{ .Values.global.registry }}/notification:{{ .Values.notification.tag }}
+        image: {{ .Values.global.registry }}/notification-service:{{ .Values.notification.tag }}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

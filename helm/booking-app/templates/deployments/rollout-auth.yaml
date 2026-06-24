@@ -23,7 +23,7 @@ spec:
       serviceAccountName: {{ .Release.Name }}-auth
       containers:
       - name: auth
-        image: {{ .Values.global.registry }}/auth:{{ .Values.auth.tag }}
+        image: {{ .Values.global.registry }}/auth-service:{{ .Values.auth.tag }}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

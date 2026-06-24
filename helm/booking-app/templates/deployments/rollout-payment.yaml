@@ -23,7 +23,7 @@ spec:
       serviceAccountName: {{ .Release.Name }}-payment
       containers:
       - name: payment
-        image: {{ .Values.global.registry }}/payment:{{ .Values.payment.tag }}
+        image: {{ .Values.global.registry }}/payment-service:{{ .Values.payment.tag }}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

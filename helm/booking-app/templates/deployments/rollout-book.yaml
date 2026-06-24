@@ -23,7 +23,7 @@ spec:
       serviceAccountName: {{ .Release.Name }}-book
       containers:
       - name: book
-        image: {{ .Values.global.registry }}/book:{{ .Values.book.tag }}
+        image: {{ .Values.global.registry }}/booking-service:{{ .Values.book.tag }}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

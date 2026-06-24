@@ -23,7 +23,7 @@ spec:
       serviceAccountName: {{ .Release.Name }}-search
       containers:
       - name: search
-        image: {{ .Values.global.registry }}/search:{{ .Values.search.tag }}
+        image: {{ .Values.global.registry }}/search-service:{{ .Values.search.tag }}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
