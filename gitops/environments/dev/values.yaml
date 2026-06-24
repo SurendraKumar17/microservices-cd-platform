@@ -44,3 +44,5 @@ booking-service:
   tag: develop-95e747ac
 notification-service:
   tag: develop-95e747ac
+search-service:
+  tag: develop-95e747ac
