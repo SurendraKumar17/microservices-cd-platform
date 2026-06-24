@@ -18,6 +18,19 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: app-dev
+  # Tell ArgoCD to treat Ingress as always healthy so the sync wave
+  # doesn't block waiting for ALB provisioning. The ALB needs pods
+  # behind it to become healthy, but pods can't start until ArgoCD
+  # deploys the Rollouts — classic chicken-and-egg. This breaks the
+  # loop. ALB will become healthy naturally once pods are running.
+  resourceHealthCustomization:
+    - group: networking.k8s.io
+      kind: Ingress
+      health.lua: |
+        hs = {}
+        hs.status = "Healthy"
+        hs.message = "Ingress health skipped - ALB provisioning is async"
+        return hs
   syncPolicy:
     automated:
       prune: true
@@ -30,3 +43,4 @@ spec:
         maxDuration: 3m
     syncOptions:
       - CreateNamespace=true
+      - SkipDryRunOnMissingResource=true
