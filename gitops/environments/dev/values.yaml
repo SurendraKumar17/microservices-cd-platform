@@ -36,13 +36,3 @@ ingress:
     alb.ingress.kubernetes.io/target-type: ip
 pdb:
   maxUnavailable: 1
-payment-service:
-  tag: develop-71b8fa90
-search-service:
-  tag: develop-71b8fa90
-booking-service:
-  tag: develop-71b8fa90
-auth-service:
-  tag: develop-71b8fa90
-notification-service:
-  tag: develop-71b8fa90
