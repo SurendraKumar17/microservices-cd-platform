@@ -4,7 +4,7 @@ global:
 frontend:
   replicas: 1
   maxReplicas: 4
-  tag: "develop-371973d6"
+  tag: "develop-f7d5c9fb"
 auth:
   replicas: 1
   maxReplicas: 4
