@@ -24,7 +24,7 @@ payment:
 notification:
   replicas: 1
   maxReplicas: 4
-  tag: "develop-f7d5c9fb"
+  tag: "develop-e04467bd"
 postgres:
   host: dev-microservices-postgres.cg9mq6cuoriv.us-east-1.rds.amazonaws.com
   user: bookinguser
