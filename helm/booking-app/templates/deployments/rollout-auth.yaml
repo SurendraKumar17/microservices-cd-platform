@@ -61,7 +61,7 @@ spec:
               name: postgres-secret
               key: dbname
         - name: DATABASE_URL
-          value: "postgres://$(DB_USERNAME):$(DB_PASSWORD)@$(DB_HOST):$(DB_PORT)/$(DB_NAME)?sslmode=require"
+          value: "postgres://$(DB_USERNAME):$(DB_PASSWORD)@$(DB_HOST):$(DB_PORT)/$(DB_NAME)?sslmode=no-verify"
         resources:
           requests:
             cpu: "100m"
