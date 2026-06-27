@@ -62,6 +62,14 @@ spec:
               key: dbname
         - name: DATABASE_URL
           value: "postgresql://$(DB_USER):$(DB_PASSWORD)@$(DB_HOST):$(DB_PORT)/$(DB_NAME)?sslmode=require"
+        - name: OTEL_SERVICE_NAME
+          value: "payment"
+        - name: OTEL_EXPORTER_OTLP_ENDPOINT
+          value: "http://otel-collector.observability.svc.cluster.local:4317"
+        - name: OTEL_EXPORTER_OTLP_PROTOCOL
+          value: "grpc"
+        - name: OTEL_TRACES_EXPORTER
+          value: "otlp"
         resources:
           requests:
             cpu: "100m"

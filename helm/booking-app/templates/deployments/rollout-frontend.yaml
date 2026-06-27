@@ -29,6 +29,8 @@ spec:
         - name: http
           containerPort: 3000
         env:
+        - name: SERVICE_NAME
+          value: "frontend"
         - name: NODE_ENV
           value: {{ .Values.global.env }}
         resources:
